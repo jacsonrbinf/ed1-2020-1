@@ -43,7 +43,6 @@ int busca_posicao_elemento(Lista *li, struct registro al);
 void MostraLista(Lista *li);
 int InsercaoInimigosIniciais(Lista *li, struct registro al);
 int Insercao(Lista *li, struct registro p, struct registro e);
-//int Contagem(Lista *li, int pos, struct registro *al);
 int consulta_lista_mat(Lista *li, int mat, struct registro *al);
 void Contagem(Lista *li, struct registro elema, struct registro elemb);
 int Remocao(Lista *li, int elem);
