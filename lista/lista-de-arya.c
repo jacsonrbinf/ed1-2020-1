@@ -1,7 +1,7 @@
 /* ED1 - EC
-   LISTA DE ARYA - CÓDIGO PARCIAL
+   LISTA DE ARYA - CODIGO PARCIAL
 
-   Prof. André L. Moura e Prof. Jacson
+   Prof. Andre L. Moura e Prof. Jacson
 */
 //Arquivo ListaDinEncad.h
 #include <stdio.h>
@@ -13,7 +13,7 @@ struct registro
     // Outros campos/membros
 };
 
-//Definição do tipo lista
+//Definicao do tipo lista
 struct elemento
 {
     struct registro dados;
@@ -39,7 +39,7 @@ int consulta_lista_elem(Lista *li, int elem, struct registro *al);
 int consulta_lista_pos(Lista *li, int pos, struct registro *al);
 int busca_posicao_elemento(Lista *li, struct registro al);
 
-// Especificações referentes à Lista de Arya
+// Especificacoes referentes a Lista de Arya
 void MostraLista(Lista *li);
 int InsercaoInimigosIniciais(Lista *li, struct registro al);
 int Insercao(Lista *li, struct registro p, struct registro e);
@@ -68,7 +68,7 @@ int main()
         InsercaoInimigosIniciais(li, al);
     }
 
-    // Execução de operações I, R, C, M ou F
+    // Execucao de operacoes I, R, C, M ou F
     do
     {
         scanf("%c", &operacao);
@@ -199,7 +199,7 @@ int insere_lista_final(Lista *li, struct registro al)
     no->dados = al;
     no->prox = NULL;
     if ((*li) == NULL)
-    { //lista vazia: insere início
+    { //lista vazia: insere inï¿½cio
         *li = no;
     }
     else
@@ -238,7 +238,7 @@ int insere_lista_ordenada(Lista *li, struct registro al)
         return 0;
     no->dados = al;
     if ((*li) == NULL)
-    { //lista vazia: insere início
+    { //lista vazia: insere inicio
         no->prox = NULL;
         *li = no;
         return 1;
@@ -252,7 +252,7 @@ int insere_lista_ordenada(Lista *li, struct registro al)
             atual = atual->prox;
         }
         if (atual == *li)
-        { //insere início
+        { //insere inicio
             no->prox = (*li);
             *li = no;
         }
@@ -277,7 +277,7 @@ int remove_lista(Lista *li, int elem)
         ant = no;
         no = no->prox;
     }
-    if (no == NULL) //não encontrado
+    if (no == NULL) //nao encontrado
         return 0;
 
     if (no == *li) //remover o primeiro?
@@ -363,7 +363,7 @@ void imprime_lista(Lista *li)
     }
 }
 
-// Implementações referentes à Lista de Arya
+// Implementacoes referentes a Lista de Arya
 void MostraLista(Lista *li)
 {
     printf("lista ");
