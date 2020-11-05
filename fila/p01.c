@@ -4,7 +4,7 @@
 //Número máximo de pacientes no dia
 #define N 25
 
-//Struct de dados
+//Struct de dados do problema 01
 typedef struct {
     int chegadaHr, chegadaMin, critico;
 } dados;
